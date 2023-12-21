@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Designer Slider</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav class="slider close">
+        <header>
+            <div class="logo-section">
+                <span class="image">
+                    <img src="logo.png" alt="logo">
+                </span>
+                <div class="text logo-text">
+                    <span class="heading">Khanan</span>
+                    <span class="sub-heading">Design Slider</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-caret-right toggle"></i>
+        </header>
+
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-house icon"></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-chart icon"></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-bell icon"></i>
+                            <span class="text nav-text">Notification</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-book-open-reader icon"></i>
+                            <span class="text nav-text">Library</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-clock icon"></i>
+                            <span class="text nav-text">History</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-thumbs-up icon"></i>
+                            <span class="text nav-text">Lied Videos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="fa-solid fa-angle-down icon"></i>
+                            <span class="text nav-text">Show more</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="last-section">
+                <ul>
+                    <li class="">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+
+                    <li class="mode toggling">
+                        <div class="sun-moon">
+                            <i class="fa-solid fa-moon icon"></i>
+                        </div>
+                        <span class="mode-text text">Dark mode</span>
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="home">
+        <div class="text">Slider Design-Technique</div>
+        <p>oqpoqofhiwpvujpcjpppqqqqjcodowpqjpqcqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqopppppppppppppppppppppppppppppppeiqi</p>
+        <p>oqpoqofhiwpvujpcjpppqqqqjcodowpqjpqcqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqopppppppppppppppppppppppppppppppeiqi</p>
+        <p>oqpoqofhiwpvujpcjpppqqqqjcodowpqjpqcqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqopppppppppppppppppppppppppppppppeiqi</p>
+        <p>oqpoqofhiwpvujpcjpppqqqqjcodowpqjpqcqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqopppppppppppppppppppppppppppppppeiqi</p>
+    </section>
+
+    <script>
+        const body =document.querySelector('body');
+        sidebar=body.querySelector('nav');
+        toggle=body.querySelector('.toggle');
+        toggling=body.querySelector('.toggling');
+        modeSwich=body.querySelector('.toggle-switch');
+        modeText=body.querySelector('.mode-text');
+
+        toggle.addEventListener('click',()=>{
+            sidebar.classList.toggle("close");
+        })
+
+        modeSwich.addEventListener('click',()=>{
+            body.classList.toggle("dark");
+            if(body.classList.contains("dark")){
+                modeText.innerText="Light mode";
+            }else{
+                modeText.innerText="Dark mode";
+            }
+        })
+    </script>
+</body>
+</html>
